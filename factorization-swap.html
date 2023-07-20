@@ -23,16 +23,31 @@
 
          
        
-       function fact(n){
+    //    function fact(n){
         
-                if (n==0)
-                  return 1;
-                else
-                  return n* fact(n-1);
-       }
-          let num = 5;
-          let result = fact(num)
-       console.log(result);
-        </script>
+    //             if (n===0)
+    //               return 1;
+    //             else
+    //               return n* fact(n-1);
+    //    }
+    //       let num = 7;
+    //       let result = fact(num)
+    //    console.log(result);
+    let userInput = prompt("Enter a number:");
+   UserInput = parseInt(userInput);
+    function fact(n) {
+    if (n === 0 ) {
+        return 1;
+    } else {
+        return n * fact(n - 1);
+    }
+}
+let result = fact(userInput)
+// console.log(`Factorial of ${userInput} is: ${result}`);
+console.log("factorial of", userInput,"is", result)
+
+
+
+   </script>
     </body>
 </html>
