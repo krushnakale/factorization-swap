@@ -14,30 +14,23 @@
            math = science;
            science = temp;
            console.log("math=",math, "science=",science);
-            //way 2
-
+            
+          //  way 2 - variable value swap using array
           let a = 20;
           let b = 40;
           [a,b]=[b,a]; //operator precedence right to left |//This creates a new array with two elements,| where a and b represent two variables you want to swap.
           console.log("a=",a,"b=",b)
 
-          // factoriazation number
-        //   let  inputNumber = prompt("please enter a number")
-        //   for(var i = 1; i<=inputNumber;i++){
-           
-        //     if(inputNumber% i == 0){
-        //         console.log(i); 
-        //     }
-        //   }
+         
        
        function fact(n){
         
-                if (n==1)
-                  return 2;
+                if (n==0)
+                  return 1;
                 else
                   return n* fact(n-1);
        }
-          let num = 7;
+          let num = 5;
           let result = fact(num)
        console.log(result);
         </script>
