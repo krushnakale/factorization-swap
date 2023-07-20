@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+    <title>
+        factorization and swap javascript program
+    </title>
+    <body>
+        <script>
+            //way 1
+            //swap variables from one to another. using third variable
+           let math = 87;
+           let science = 85;
+           
+           let temp = math;
+           math = science;
+           science = temp;
+           console.log("math=",math, "science=",science);
+            //way 2
+
+          let a = 20;
+          let b = 40;
+          [a,b]=[b,a]; //operator precedence right to left |//This creates a new array with two elements,| where a and b represent two variables you want to swap.
+          console.log("a=",a,"b=",b)
+
+          // factoriazation number
+          let  inputNumber = prompt("please enter a number")
+          for(var i = 1; i<=inputNumber;i++){
+           
+            if(inputNumber% i == 0){
+                console.log(i); 
+            }
+          }
+           
+        </script>
+    </body>
+</html>
